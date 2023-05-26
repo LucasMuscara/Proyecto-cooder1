@@ -1,0 +1,62 @@
+header  {
+    
+    
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+
+}
+
+nav ul li{
+
+    list-style: none;
+    float: left;
+    font: weight 500px;
+    padding-right: 40px;
+    font-size: 30px;
+
+}
+
+
+
+h1{
+
+    font-size: 60px;
+    height: 120px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+.portada-index h3{
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+}
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .redes-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .redes-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
