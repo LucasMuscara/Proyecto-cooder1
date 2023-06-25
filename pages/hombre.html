@@ -1,75 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion</title>
+    <title>Tienda de ropa</title>
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
-
-
 <body>
+<header>
+    <h1>Logo</h1>
 
-    <header>
-        <div class="color">
-            <h1> Tienda de ropa</h1>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hombre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mujer.html">Mujer</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="destacado.html">Destacado</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="oferta.html">Oferta</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <div class="container-title">Hombre</div>
+    <main>
+
+        <div class="container-img">
+            <img src="../img/pantalonhombre.jpeg" alt="Pantalon cargo">
+        </div>
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>7.990</span>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="container-details-product">
+                <div class="form-group">
+                    <label for="Colour">Color</label>
+                    <select name="Colour" id="Colour">
+                        <option disabled selected value="">Escoge una opcion</option>
+                        <option value="Negro">Negro</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Gris">Gris</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="size">Talla</label>
+                <select name="size" id="size">
+                    <option disabled selected value="">Escoge una opcion</option>
+                    <option value="Xl">Xl</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                </select>
+
+            </div>
+            <button class="btn-clean">Limpiar</button>
+            <div>
+
+                <div class="container-add-cart">
+                    <div class="container-quantity">
+                        <input type="number" name="" id="" placeholder="1" value="1" min="1" class="input-quantity" />
+                        <div class="btn-increment-decrement"><i class="fa-solid fa-chevron-up"></i>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button class="btn-add-to-cart"><i class="fa-solid fa-plus"></i>
+                    Añadir al carrito
+                </button>
+
+
+            </div>
+
+            <div class="container-description">
+                <div class="title-description">
+                    <h4>Descripcion</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </div>
+
+
+
+            <div class="text-description">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam eum totam assumenda laboriosam
+                    voluptatum beatae quia quod eius quasi eaque. Reprehenderit quam eveniet maiores repellendus,
+                    aperiam quis ipsum veritatis ipsam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
+                    aspernatur nulla unde rerum. Incidunt iure laborum quis veritatis totam tempora fugit labore
+                    voluptas fuga doloribus placeat nam, quasi eveniet debitis.
+
+
+                </p>
+
+
+
+            </div>
+
+            <div class="container-additional-information">
+
+                <div class="title-additional-information">
+                    <h4>Informacion Adicional</h4>
+                    <i class="fa-solid fa-chevron-down"></i>
+
+
+                </div>
+            </div>
+
+            <div class="text-additional-information">
+                <p>-----------</p>
+
+            </div>
+
+            <div class="container-reviews">
+
+                <div class="title-reviews">
+                    <h4>Reseñas</h4>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+
+                </div>
+            </div>
+            <div class="text-reviews">
+                <p>-----------</p>
+
+            </div>
+
+            <div class="container-social">
+                <span>Compartir</span>
+                <div class="container-buttons-social">
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+
+
+                </div>
+            </div>
+
+
+
+
+
 
         </div>
 
-        <nav>
-            <a href="../index.html" class="nav-link">Inicio</a>
-            <a href="../pages/hombre.html" class="nav-link">hombre</a>
-            <a href="../pages/mujer.html" class="nav-link">mujer</a>
-            <a href="../pages/oferta.html" class="nav-link">ofertas</a>
-            <a href="../pages/tendencia.html" class="nav-link">tendencias</a>
 
-        </nav>
+    </main>
 
+    <section class="container-related-producte">
+        <h2>Productos relacionados </h2>
+        <div class="card-list-products">    
+            <div class="card">
+                <div class="card-img">
+                    <img src="../img/Remeraverde.jpeg" alt="Producto-1">
+                </div>
 
-    </header>
-    <hr>
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Remera oversize</h3>
+                        <p class="category">
+                            Remera verde
+                        </p>
+                    </div>
+                    <div class="price">7.500</div>
+                </div>
 
-    <main>
-    
-    <section class="conteiner">
+            </div>
+        
 
-        <h3>Buzo negro</h3>
+        <div class="card">
+            <div class="card-img">
+                <img src="../img/Buzo-negroo.jpg" alt="Producto-2">
+            </div>
 
-        <div><img src="../img/buzooversize.jpeg" alt="buzooversize"></div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Buzo negro</h3>
+                    <p class="category">
+                        Buzo con estampado reflex
+                    </p>
+                </div>
+                <div class="price">7.600</div>
+            </div>
 
-<h3>Pantalon verde ancho</h3>
+        </div>
 
-        <div><img src="../img/pantalonhombre.jpeg" alt="pantalonhombre"></div>
+        <div class="card">
+            <div class="card-img">
+                <img src="../img/Remera-blancaho.jpg" alt="Producto-3">
+            </div>
 
-        <h3>remera oversize verde</h3>
-        <div> <img src="../img/Remeraverde.jpeg" alt="Remeraverde"></div>
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Remera overszie</h3>
+                    <p class="category">
+                        Remera blanca con estamapdo
+                    </p>
+                </div>
+                <div class="price">6.500</div>
+            </div>
 
+        </div>
 
+        <div class="card">
+            <div class="card-img">
+                <img src="../img/remera-beige.jpg" alt="Producto-4">
+            </div>
 
+            <div class="info-card">
+                <div class="text-product">
+                    <h3>Remera oversize</h3>
+                    <p class="category">
+                        Remera beige
+                    </p>
+                </div>
+                <div class="price">7.300</div>
+            </div>
 
-
+        </div>
+    </div>
 
 
 
     </section>
-   </main>
+
+    <footer>
+        <p>Footer</p>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b42d6e7aa4.js" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 
 
 
 
-
-<footer class="footer">
-    <div class="container">
-      <div class="redes-title">Redes</div>
-      <img src="..//img/Wsp.jpeg" alt="Logo de la página" class="redes-logo">
-      <img src="../img/Instagram.jpeg" alt="Logo de WhatsApp" class="redes-logo">
-      <img src="../img/Twitter.jpeg" alt="Logo de Instagram" class="redes-logo">
-    </div>
-  </footer>
-
-</body>
     
+</body>
+</html>
